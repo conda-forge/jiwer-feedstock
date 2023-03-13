@@ -1,11 +1,11 @@
-About jiwer
-===========
+About jiwer-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jiwer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jitsi/jiwer
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jiwer-feedstock/blob/main/LICENSE.txt)
 
 Summary: Evaluate your speech-to-text system with similarity measures such as word error rate (WER)
 
