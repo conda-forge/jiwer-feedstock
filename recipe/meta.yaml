@@ -1,5 +1,5 @@
 {% set name = "jiwer" %}
-{% set version = "3.0.3" %}
+{% set version = "3.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jiwer-{{ version }}.tar.gz
-  sha256: a777f361a5a5f76012078d758e444e1da2a171fb685dad9cf8fb69181ea26ee6
+  sha256: 2438acdc7ca22128fcab4be60db595809d2b5e73785b736de36dc3281a2a6ae8
 
 build:
   noarch: python
