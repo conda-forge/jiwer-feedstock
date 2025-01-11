@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jiwer-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jiwer-{{ version }}.tar.gz
   sha256: 4a215a774b6a2ad92838bfc9f64f072709557af48e3eb9d6bdbcee6819535b2d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python {{ python_min }}
     - pip
     - poetry-core
   run:
-    - python >=3.7,<4.0
+    - python >={{ python_min }},<4.0
     - rapidfuzz >=3.0.0,<4.0.0
     - click >=8.1.3,<9.0.0
 
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jitsi/jiwer
