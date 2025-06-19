@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jiwer
-  version: 3.0.5
+  version: "4.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jiwer-${{ version }}.tar.gz
-  sha256: 4a215a774b6a2ad92838bfc9f64f072709557af48e3eb9d6bdbcee6819535b2d
+  sha256: ae9c051469102a61ef0927100baeeb4546f78d180c9b0948281d08eaf44c191e
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
